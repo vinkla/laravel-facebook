@@ -9,8 +9,9 @@ $facebook->get('/me', '{access-token}');
 // Fetch the login helper.
 Facebook::getRedirectLoginHelper();
 ```
-
 [![Build Status](https://img.shields.io/travis/schimpanz/Laravel-Facebook/master.svg?style=flat)](https://travis-ci.org/schimpanz/Laravel-Facebook)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/schimpanz/Laravel-Facebook.svg?style=flat)](https://scrutinizer-ci.com/g/schimpanz/Laravel-Facebook/code-structure)
+[![Quality Score](https://img.shields.io/scrutinizer/g/schimpanz/Laravel-Facebook.svg?style=flat)](https://scrutinizer-ci.com/g/schimpanz/Laravel-Facebook)
 [![Latest Version](https://img.shields.io/github/release/schimpanz/Laravel-Facebook.svg?style=flat)](https://github.com/schimpanz/Laravel-Facebook/releases)
 [![License](https://img.shields.io/packagist/l/schimpanz/facebook.svg?style=flat)](https://packagist.org/packages/schimpanz/facebook)
 
