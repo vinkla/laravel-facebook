@@ -10,8 +10,8 @@ $facebook->get('/me', '{access-token}');
 Facebook::getRedirectLoginHelper();
 ```
 
-[![Build Status](https://img.shields.io/travis/schimpanz/facebook/master.svg?style=flat)](https://travis-ci.org/schimpanz/facebook)
-[![Latest Version](https://img.shields.io/github/release/schimpanz/facebook.svg?style=flat)](https://github.com/schimpanz/facebook/releases)
+[![Build Status](https://img.shields.io/travis/schimpanz/Laravel-Facebook/master.svg?style=flat)](https://travis-ci.org/schimpanz/Laravel-Facebook)
+[![Latest Version](https://img.shields.io/github/release/schimpanz/Laravel-Facebook.svg?style=flat)](https://github.com/schimpanz/Laravel-Facebook/releases)
 [![License](https://img.shields.io/packagist/l/schimpanz/facebook.svg?style=flat)](https://packagist.org/packages/schimpanz/facebook)
 
 ## Installation
