@@ -1,5 +1,7 @@
 # Laravel Facebook
 
+![facebook](https://cloud.githubusercontent.com/assets/499192/8811289/68d36b42-2ff5-11e5-9ba8-986954cda54a.png)
+
 Laravel [Facebook](https://facebook.com) is a [Facebook](https://facebook.com) for Laravel using the [official Facebook package](https://github.com/facebook/facebook-php-sdk-v4).
 
 ```php
