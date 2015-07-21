@@ -1,0 +1,44 @@
+{
+    "name": "schimpanz/facebook",
+    "description": "A Facebook bridge for Laravel",
+    "license": "MIT",
+    "keywords": ["facebook", "manager", "schimpanz", "laravel"],
+    "authors": [
+        {
+            "name": "Vincent Klaiber",
+            "email": "vincent@schimpanz.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/contracts": "5.0.*|5.1.*",
+        "illuminate/support": "5.0.*|5.1.*",
+        "graham-campbell/manager": "~2.2",
+        "facebook/php-sdk-v4": "~5.0"
+    },
+    "require-dev": {
+        "graham-campbell/testbench": "~3.0",
+        "mockery/mockery": "^0.9.4",
+        "phpunit/phpunit": "^4.7.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Schimpanz\\Facebook\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Schimpanz\\Tests\\Facebook\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
