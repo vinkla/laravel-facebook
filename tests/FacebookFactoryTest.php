@@ -28,7 +28,7 @@ class FacebookFactoryTest extends AbstractTestCase
         $return = $factory->make([
             'app_id' => 'your-app-id',
             'app_secret' => 'your-app-scret',
-            'default_graph_version' => 'v2.3',
+            'default_graph_version' => 'v2.4',
         ]);
 
         $this->assertInstanceOf(Facebook::class, $return);
