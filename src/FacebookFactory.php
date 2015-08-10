@@ -45,15 +45,17 @@ class FacebookFactory
      */
     protected function getConfig(array $config)
     {
-        $keys = ['app_id', 'app_secret', 'default_graph_version'];
+        $requiredKeys = ['app_id', 'app_secret', 'default_graph_version'];
+        $optionalKeys = ['default_access_token'];
+        $validKeys = array_merge($requiredKeys, $optionalKeys);
 
-        foreach ($keys as $key) {
+        foreach ($requiredKeys as $key) {
             if (!array_key_exists($key, $config)) {
                 throw new \InvalidArgumentException('The Facebook client requires configuration.');
             }
         }
 
-        return array_only($config, $keys);
+        return array_only($config, $validKeys);
     }
 
     /**

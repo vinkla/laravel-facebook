@@ -54,6 +54,21 @@ class FacebookFactoryTest extends AbstractTestCase
         $factory->make(['app_secret' => 'your-app-secret']);
     }
 
+    public function testMakeWithOptionalDefaultAccessToken()
+    {
+        $factory = $this->getFacebookFactory();
+
+        $defaultAccessToken = 'abc1234';
+        $return = $factory->make([
+            'app_id' => 'your-app-id',
+            'app_secret' => 'your-app-scret',
+            'default_graph_version' => 'v2.4',
+            'default_access_token' => $defaultAccessToken,
+        ]);
+        $this->assertInstanceOf(Facebook::class, $return);
+
+        $this->assertEquals($defaultAccessToken, $return->getDefaultAccessToken());
+    }
     protected function getFacebookFactory()
     {
         return new FacebookFactory();
