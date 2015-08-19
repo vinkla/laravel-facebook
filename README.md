@@ -2,7 +2,7 @@
 
 ![facebook](https://cloud.githubusercontent.com/assets/499192/8819568/a195be0a-304d-11e5-87e6-9a7cdebb32fe.png)
 
-Laravel [Facebook](https://facebook.com) is a [Facebook](https://facebook.com) for Laravel using the [official Facebook package](https://github.com/facebook/facebook-php-sdk-v4).
+Laravel [Facebook](https://facebook.com) is a [Facebook](https://facebook.com) bridge for Laravel using the [official Facebook package](https://github.com/facebook/facebook-php-sdk-v4).
 
 ```php
 // Get the current user.
