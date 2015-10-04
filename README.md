@@ -27,13 +27,13 @@ composer require schimpanz/facebook
 Add the service provider to ```config/app.php``` in the `providers` array.
 
 ```php
-'Schimpanz\Facebook\FacebookServiceProvider'
+Schimpanz\Facebook\FacebookServiceProvider::class
 ```
 
 If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in ```config/app.php``` to your aliases array.
 
 ```php
-'Facebook' => 'Schimpanz\Facebook\Facades\Facebook'
+'Facebook' => Schimpanz\Facebook\Facades\Facebook::class
 ```
 
 ## Configuration
