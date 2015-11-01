@@ -46,8 +46,12 @@ class FacebookFactory
      */
     protected function getConfig(array $config)
     {
-        if (!array_key_exists('app_id', $config) || !array_key_exists('app_secret', $config)) {
-            throw new InvalidArgumentException('The Facebook client requires configuration.');
+        $keys = ['app_id', 'app_secret'];
+
+        foreach ($keys as $key) {
+            if (!array_key_exists($key, $config)) {
+                throw new InvalidArgumentException("Missing configuration key [$key].");
+            }
         }
 
         $keys = ['app_id', 'app_secret', 'default_graph_version', 'default_access_token'];
