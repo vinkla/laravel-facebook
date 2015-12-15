@@ -11,10 +11,10 @@ $facebook->get('/me', '{access-token}');
 // Fetch the login helper.
 Facebook::getRedirectLoginHelper();
 ```
-[![Build Status](https://img.shields.io/travis/vinakl/facebook/master.svg?style=flat)](https://travis-ci.org/vinakl/facebook)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/vinakl/facebook.svg?style=flat)](https://scrutinizer-ci.com/g/vinakl/facebook/code-structure)
-[![Quality Score](https://img.shields.io/scrutinizer/g/vinakl/facebook.svg?style=flat)](https://scrutinizer-ci.com/g/vinakl/facebook)
-[![Latest Version](https://img.shields.io/github/release/vinakl/facebook.svg?style=flat)](https://github.com/vinakl/facebook/releases)
+[![Build Status](https://img.shields.io/travis/vinkla/facebook/master.svg?style=flat)](https://travis-ci.org/vinkla/facebook)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/vinkla/facebook.svg?style=flat)](https://scrutinizer-ci.com/g/vinkla/facebook/code-structure)
+[![Quality Score](https://img.shields.io/scrutinizer/g/vinkla/facebook.svg?style=flat)](https://scrutinizer-ci.com/g/vinkla/facebook)
+[![Latest Version](https://img.shields.io/github/release/vinkla/facebook.svg?style=flat)](https://github.com/vinkla/facebook/releases)
 [![License](https://img.shields.io/packagist/l/vinkla/facebook.svg?style=flat)](https://packagist.org/packages/vinkla/facebook)
 
 ## Installation
