@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.0.0 (upcoming)
+
+- Changes name and owner
+
 ## 1.2.0 (released 2015-11-14)
 
 - Laravel 5.2 support

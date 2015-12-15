@@ -3,13 +3,13 @@
 /*
  * This file is part of Laravel Facebook.
  *
- * (c) Schimpanz Solutions AB <info@schimpanz.com>
+  * (c) Vincent Klaiber <hello@vinkla.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Schimpanz\Facebook;
+namespace Vinkla\Facebook;
 
 use GrahamCampbell\Manager\AbstractManager;
 use Illuminate\Contracts\Config\Repository;
@@ -17,14 +17,14 @@ use Illuminate\Contracts\Config\Repository;
 /**
  * This is the Facebook manager class.
  *
- * @author Vincent Klaiber <vincent@schimpanz.com>
+ * @author Vincent Klaiber <hello@vinkla.com>
  */
 class FacebookManager extends AbstractManager
 {
     /**
      * The factory instance.
      *
-     * @var \Schimpanz\Facebook\FacebookFactory
+     * @var \Vinkla\Facebook\FacebookFactory
      */
     private $factory;
 
@@ -32,7 +32,7 @@ class FacebookManager extends AbstractManager
      * Create a new Facebook manager instance.
      *
      * @param \Illuminate\Contracts\Config\Repository $config
-     * @param \Schimpanz\Facebook\FacebookFactory           $factory
+     * @param \Vinkla\Facebook\FacebookFactory           $factory
      *
      * @return void
      */
@@ -68,7 +68,7 @@ class FacebookManager extends AbstractManager
     /**
      * Get the factory instance.
      *
-     * @return \Schimpanz\Facebook\FacebookFactory
+     * @return \Vinkla\Facebook\FacebookFactory
      */
     public function getFactory()
     {

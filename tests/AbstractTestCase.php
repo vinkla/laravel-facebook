@@ -3,21 +3,21 @@
 /*
  * This file is part of Laravel Facebook.
  *
- * (c) Schimpanz Solutions AB <info@schimpanz.com>
+  * (c) Vincent Klaiber <hello@vinkla.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Schimpanz\Tests\Facebook;
+namespace Vinkla\Tests\Facebook;
 
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
-use Schimpanz\Facebook\FacebookServiceProvider;
+use Vinkla\Facebook\FacebookServiceProvider;
 
 /**
  * This is the abstract test class.
  *
- * @author Vincent Klaiber <vincent@schimpanz.com>
+ * @author Vincent Klaiber <hello@vinkla.com>
  */
 abstract class AbstractTestCase extends AbstractPackageTestCase
 {

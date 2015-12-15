@@ -27,13 +27,13 @@ composer require schimpanz/facebook
 Add the service provider to `config/app.php` in the `providers` array.
 
 ```php
-Schimpanz\Facebook\FacebookServiceProvider::class
+Vinkla\Facebook\FacebookServiceProvider::class
 ```
 
 If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in `config/app.php` to your aliases array.
 
 ```php
-'Facebook' => Schimpanz\Facebook\Facades\Facebook::class
+'Facebook' => Vinkla\Facebook\Facades\Facebook::class
 ```
 
 ## Configuration
@@ -73,7 +73,7 @@ Here you can see an example of just how simple this package is to use. Out of th
 
 ```php
 // You can alias this in config/app.php.
-use Schimpanz\Facebook\Facades\Facebook;
+use Vinkla\Facebook\Facades\Facebook;
 
 Facebook::get('/me', '{access-token}');
 // We're done here - how easy was that, it just works!
@@ -85,7 +85,7 @@ Facebook::getRedirectLoginHelper();
 The Facebook manager will behave like it is a `Facebook\Facebook`. If you want to call specific connections, you can do that with the connection method:
 
 ```php
-use Schimpanz\Facebook\Facades\Facebook;
+use Vinkla\Facebook\Facades\Facebook;
 
 // Writing this…
 Facebook::connection('main')->get('/me', '{access-token}');
@@ -106,7 +106,7 @@ Facebook::setDefaultConnection('alternative'); // The default is now alternative
 If you prefer to use dependency injection over facades like me, then you can inject the manager:
 
 ```php
-use Schimpanz\Facebook\FacebookManager;
+use Vinkla\Facebook\FacebookManager;
 
 class Foo
 {

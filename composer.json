@@ -1,12 +1,12 @@
 {
-    "name": "schimpanz/facebook",
+    "name": "vinkla/facebook",
     "description": "A Facebook bridge for Laravel",
     "license": "MIT",
-    "keywords": ["facebook", "manager", "schimpanz", "laravel"],
+    "keywords": ["facebook", "manager", "laravel"],
     "authors": [
         {
             "name": "Vincent Klaiber",
-            "email": "vincent@schimpanz.com"
+            "email": "hello@vinkla.com"
         }
     ],
     "require": {
@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Schimpanz\\Facebook\\": "src/"
+            "Vinkla\\Facebook\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Schimpanz\\Tests\\Facebook\\": "tests/"
+            "Vinkla\\Tests\\Facebook\\": "tests/"
         }
     },
     "config": {
@@ -36,7 +36,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.2-dev"
+            "dev-master": "2.0-dev"
         }
     },
     "minimum-stability": "dev",

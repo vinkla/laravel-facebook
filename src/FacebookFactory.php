@@ -3,13 +3,13 @@
 /*
  * This file is part of Laravel Facebook.
  *
- * (c) Schimpanz Solutions AB <info@schimpanz.com>
+  * (c) Vincent Klaiber <hello@vinkla.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Schimpanz\Facebook;
+namespace Vinkla\Facebook;
 
 use Facebook\Facebook;
 use InvalidArgumentException;
@@ -17,7 +17,7 @@ use InvalidArgumentException;
 /**
  * This is the Facebook facade class.
  *
- * @author Vincent Klaiber <vincent@schimpanz.com>
+ * @author Vincent Klaiber <hello@vinkla.com>
  */
 class FacebookFactory
 {
