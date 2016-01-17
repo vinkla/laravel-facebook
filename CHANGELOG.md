@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## 2.0.0 (upcoming)
+## 2.0.1 (released 2016-01-17)
+
+- Lumen 5.2 support
+
+## 2.0.0 (released 2015-12-5)
 
 - Changed name and owner
 
