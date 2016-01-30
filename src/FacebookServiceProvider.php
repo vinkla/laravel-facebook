@@ -12,7 +12,7 @@
 namespace Vinkla\Facebook;
 
 use Facebook\Facebook;
-use Illuminate\Contracts\Container\Container as Application;
+use Illuminate\Contracts\Container\Container;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Lumen\Application as LumenApplication;
@@ -59,62 +59,56 @@ class FacebookServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->registerFactory($this->app);
-        $this->registerManager($this->app);
-        $this->registerBindings($this->app);
+        $this->registerFactory();
+        $this->registerManager();
+        $this->registerBindings();
     }
 
     /**
      * Register the factory class.
      *
-     * @param \Illuminate\Contracts\Container\Container $app
-     *
      * @return void
      */
-    protected function registerFactory(Application $app)
+    protected function registerFactory()
     {
-        $app->singleton('facebook.factory', function () {
+        $this->app->singleton('facebook.factory', function () {
             return new FacebookFactory();
         });
 
-        $app->alias('facebook.factory', FacebookFactory::class);
+        $this->app->alias('facebook.factory', FacebookFactory::class);
     }
 
     /**
      * Register the manager class.
      *
-     * @param \Illuminate\Contracts\Container\Container $app
-     *
      * @return void
      */
-    protected function registerManager(Application $app)
+    protected function registerManager()
     {
-        $app->singleton('facebook', function ($app) {
+        $this->app->singleton('facebook', function (Container $app) {
             $config = $app['config'];
             $factory = $app['facebook.factory'];
 
             return new FacebookManager($config, $factory);
         });
 
-        $app->alias('facebook', FacebookManager::class);
+        $this->app->alias('facebook', FacebookManager::class);
     }
 
     /**
      * Register the bindings.
      *
-     * @param \Illuminate\Contracts\Container\Container $app
-     *
      * @return void
      */
-    protected function registerBindings(Application $app)
+    protected function registerBindings()
     {
-        $app->bind('facebook.connection', function ($app) {
+        $this->app->bind('facebook.connection', function (Container $app) {
             $manager = $app['facebook'];
 
             return $manager->connection();
         });
 
-        $app->alias('facebook.connection', Facebook::class);
+        $this->app->alias('facebook.connection', Facebook::class);
     }
 
     /**
