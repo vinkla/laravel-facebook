@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.0.3 (released 2016-04-25)
+
+- Update default graph version
+
 ## 2.0.2 (released 2016-01-30)
 
 - Improved service provider
