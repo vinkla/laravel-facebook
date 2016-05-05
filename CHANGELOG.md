@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.1.0 (released 2016-05-05)
+
+- Added laravel 5.3 support
+
 ## 2.0.3 (released 2016-04-25)
 
 - Update default graph version
