@@ -12,6 +12,7 @@ $facebook->get('/me', '{access-token}');
 Facebook::getRedirectLoginHelper();
 ```
 [![Build Status](https://img.shields.io/travis/vinkla/facebook/master.svg?style=flat)](https://travis-ci.org/vinkla/facebook)
+[![StyleCI](https://styleci.io/repos/35561124/shield?style=flat)](https://styleci.io/repos/35561124)
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/vinkla/facebook.svg?style=flat)](https://scrutinizer-ci.com/g/vinkla/facebook/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/vinkla/facebook.svg?style=flat)](https://scrutinizer-ci.com/g/vinkla/facebook)
 [![Latest Version](https://img.shields.io/github/release/vinkla/facebook.svg?style=flat)](https://github.com/vinkla/facebook/releases)
