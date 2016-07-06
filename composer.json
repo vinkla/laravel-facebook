@@ -17,7 +17,7 @@
         "facebook/php-sdk-v4": "^5.1"
     },
     "require-dev": {
-        "graham-campbell/testbench": "^3.1",
+        "graham-campbell/testbench": "^3.2",
         "mockery/mockery": "^0.9.5",
         "phpunit/phpunit": "^5.4"
     },
