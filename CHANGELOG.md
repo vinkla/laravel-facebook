@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.3.0 (released 2016-07-25)
+
+- Bump graph version
+
 ## 2.2.0 (released 2016-07-11)
 
 - Dropped php 5.5 support
