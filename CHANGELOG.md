@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.4.0 (released 2016-08-23)
+
+- Update facebook graph sdk
+
 ## 2.3.0 (released 2016-07-25)
 
 - Bump graph version
