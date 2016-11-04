@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.5.0 (released 2016-11-04)
+
+- Update facebook graph sdk
+
 ## 2.4.0 (released 2016-08-23)
 
 - Update facebook graph sdk

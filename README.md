@@ -2,7 +2,7 @@
 
 ![facebook](https://cloud.githubusercontent.com/assets/499192/8819568/a195be0a-304d-11e5-87e6-9a7cdebb32fe.png)
 
-Laravel [Facebook](https://facebook.com) is a [Facebook](https://facebook.com) bridge for Laravel using the [official Facebook package](https://github.com/facebook/facebook-php-sdk-v4).
+> A [Facebook](https://github.com/facebook/php-graph-sdk) bridge for Laravel.
 
 ```php
 // Get the current user.
@@ -11,14 +11,15 @@ $facebook->get('/me', '{access-token}');
 // Fetch the login helper.
 Facebook::getRedirectLoginHelper();
 ```
+
 [![Build Status](https://img.shields.io/travis/vinkla/laravel-facebook/master.svg?style=flat)](https://travis-ci.org/vinkla/laravel-facebook)
 [![StyleCI](https://styleci.io/repos/35561124/shield?style=flat)](https://styleci.io/repos/35561124)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/vinkla/facebook.svg?style=flat)](https://scrutinizer-ci.com/g/vinkla/facebook/code-structure)
-[![Quality Score](https://img.shields.io/scrutinizer/g/vinkla/facebook.svg?style=flat)](https://scrutinizer-ci.com/g/vinkla/facebook)
+[![Coverage Status](https://img.shields.io/codecov/c/github/vinkla/laravel-facebook.svg?style=flat)](https://codecov.io/github/vinkla/laravel-facebook)
 [![Latest Version](https://img.shields.io/github/release/vinkla/facebook.svg?style=flat)](https://github.com/vinkla/facebook/releases)
 [![License](https://img.shields.io/packagist/l/vinkla/facebook.svg?style=flat)](https://packagist.org/packages/vinkla/facebook)
 
 ## Installation
+
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ```bash
@@ -70,6 +71,7 @@ This facade will dynamically pass static method calls to the `facebook` object i
 This class contains no public methods of interest. This class should be added to the providers array in `config/app.php`. This class will setup ioc bindings.
 
 ### Examples
+
 Here you can see an example of just how simple this package is to use. Out of the box, the default adapter is `main`. After you enter your authentication details in the config file, it will just work:
 
 ```php
@@ -132,4 +134,4 @@ There are other classes in this package that are not documented here. This is be
 
 ## License
 
-Laravel Facebook is licensed under [The MIT License (MIT)](LICENSE).
+[MIT](LICENSE) © [Vincent Klaiber](https://vinkla.com)
