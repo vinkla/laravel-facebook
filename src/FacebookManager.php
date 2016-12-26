@@ -11,6 +11,7 @@
 
 namespace Vinkla\Facebook;
 
+use Facebook\Facebook;
 use GrahamCampbell\Manager\AbstractManager;
 use Illuminate\Contracts\Config\Repository;
 
@@ -32,7 +33,7 @@ class FacebookManager extends AbstractManager
      * Create a new Facebook manager instance.
      *
      * @param \Illuminate\Contracts\Config\Repository $config
-     * @param \Vinkla\Facebook\FacebookFactory           $factory
+     * @param \Vinkla\Facebook\FacebookFactory $factory
      *
      * @return void
      */
@@ -48,9 +49,9 @@ class FacebookManager extends AbstractManager
      *
      * @param array $config
      *
-     * @return mixed
+     * @return \Facebook\Facebook
      */
-    protected function createConnection(array $config)
+    protected function createConnection(array $config): Facebook
     {
         return $this->factory->make($config);
     }
@@ -60,7 +61,7 @@ class FacebookManager extends AbstractManager
      *
      * @return string
      */
-    protected function getConfigName()
+    protected function getConfigName(): string
     {
         return 'facebook';
     }
@@ -70,7 +71,7 @@ class FacebookManager extends AbstractManager
      *
      * @return \Vinkla\Facebook\FacebookFactory
      */
-    public function getFactory()
+    public function getFactory(): FacebookFactory
     {
         return $this->factory;
     }

@@ -28,7 +28,7 @@ class FacebookFactory
      *
      * @return \Facebook\Facebook
      */
-    public function make(array $config)
+    public function make(array $config): Facebook
     {
         $config = $this->getConfig($config);
 
@@ -44,7 +44,7 @@ class FacebookFactory
      *
      * @return array
      */
-    protected function getConfig(array $config)
+    protected function getConfig(array $config): array
     {
         $keys = ['app_id', 'app_secret'];
 
@@ -66,7 +66,7 @@ class FacebookFactory
      *
      * @return \Facebook\Facebook
      */
-    protected function getClient(array $config)
+    protected function getClient(array $config): Facebook
     {
         return new Facebook($config);
     }

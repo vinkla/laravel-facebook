@@ -27,7 +27,7 @@ class FacebookFactoryTest extends AbstractTestCase
 
         $return = $factory->make([
             'app_id' => 'your-app-id',
-            'app_secret' => 'your-app-scret',
+            'app_secret' => 'your-app-secret',
             'default_graph_version' => 'v2.4',
         ]);
 
