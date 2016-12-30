@@ -17,14 +17,14 @@ use Facebook\Facebook;
 use InvalidArgumentException;
 
 /**
- * This is the Facebook facade class.
+ * This is the facebook facade class.
  *
  * @author Vincent Klaiber <hello@vinkla.com>
  */
 class FacebookFactory
 {
     /**
-     * Make a new Facebook client.
+     * Make a new facebook client.
      *
      * @param array $config
      *
@@ -62,7 +62,7 @@ class FacebookFactory
     }
 
     /**
-     * Get the Facebook client.
+     * Get the facebook client.
      *
      * @param string[] $config
      *

@@ -18,7 +18,7 @@ use GrahamCampbell\Manager\AbstractManager;
 use Illuminate\Contracts\Config\Repository;
 
 /**
- * This is the Facebook manager class.
+ * This is the facebook manager class.
  *
  * @author Vincent Klaiber <hello@vinkla.com>
  */
@@ -32,7 +32,7 @@ class FacebookManager extends AbstractManager
     private $factory;
 
     /**
-     * Create a new Facebook manager instance.
+     * Create a new facebook manager instance.
      *
      * @param \Illuminate\Contracts\Config\Repository $config
      * @param \Vinkla\Facebook\FacebookFactory $factory
