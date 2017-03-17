@@ -56,7 +56,7 @@ class FacebookFactory
             }
         }
 
-        $keys = ['app_id', 'app_secret', 'default_graph_version', 'default_access_token'];
+        $keys = ['app_id', 'app_secret', 'default_graph_version', 'default_access_token', 'persistent_data_handler' ];
 
         return array_only($config, $keys);
     }
