@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.7.0 (released 2017-03-17)
+
+- Added configuration keys
+
 ## 2.6.0 (released 2017-01-01)
 
 - Added laravel 5.4 support
