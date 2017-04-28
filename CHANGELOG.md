@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.8.0 (released 2017-04-28)
+
+- Update facebook graph sdk
+
 ## 2.7.0 (released 2017-03-17)
 
 - Added configuration keys
