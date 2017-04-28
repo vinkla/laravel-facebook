@@ -15,7 +15,7 @@
         "illuminate/contracts": "5.3.* || 5.4.*",
         "illuminate/support": "5.3.* || 5.4.*",
         "graham-campbell/manager": "^2.5",
-        "facebook/graph-sdk": "^5.4"
+        "facebook/graph-sdk": "^5.5"
     },
     "require-dev": {
         "graham-campbell/testbench": "^3.3",
