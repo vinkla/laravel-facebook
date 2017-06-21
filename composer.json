@@ -38,6 +38,14 @@
     "extra": {
         "branch-alias": {
             "dev-master": "2.6-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Vinkla\\Facebook\\FacebookServiceProvider"
+            ],
+            "aliases": {
+                "Facebook": "Vinkla\\Facebook\\Facades\\Facebook"
+            }
         }
     },
     "minimum-stability": "dev",
