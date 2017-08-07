@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2.9.0 (released 2017-08-07)
+
+- Added laravel 5.5 support
+- Update facebook graph sdk
+
 ## 2.8.0 (released 2017-04-28)
 
 - Update facebook graph sdk
