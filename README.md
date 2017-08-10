@@ -113,17 +113,17 @@ use Vinkla\Facebook\FacebookManager;
 
 class Foo
 {
-	protected $facebook;
+    protected $facebook;
 
-	public function __construct(FacebookManager $facebook)
-	{
-		$this->facebook = $facebook;
-	}
+    public function __construct(FacebookManager $facebook)
+    {
+        $this->facebook = $facebook;
+    }
 
-	public function bar($request)
-	{
-		$this->facebook->get('/me', '{access-token}');
-	}
+    public function bar($request)
+    {
+        $this->facebook->get('/me', '{access-token}');
+    }
 }
 
 App::make('Foo')->bar();
