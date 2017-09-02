@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.10.0 (released 2017-09-02)
+
+- Removed laravel 5.3 and 5.4 support
+
 ## 2.9.0 (released 2017-08-07)
 
 - Added laravel 5.5 support
