@@ -15,7 +15,8 @@
         "illuminate/contracts": "5.5.*",
         "illuminate/support": "5.5.*",
         "graham-campbell/manager": "^3.0",
-        "facebook/graph-sdk": "^5.5"
+        "facebook/graph-sdk": "^6.0",
+        "php-http/guzzle6-adapter": "^1.1"
     },
     "require-dev": {
         "graham-campbell/analyzer": "^1.1",

@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 3.0.0 (upcoming)
+
+- Added httplug support
+- Update facebook graph sdk
+
 ## 2.10.0 (released 2017-09-02)
 
 - Removed laravel 5.3 and 5.4 support
