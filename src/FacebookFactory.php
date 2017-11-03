@@ -48,7 +48,7 @@ class FacebookFactory
      */
     protected function getConfig(array $config): array
     {
-        $keys = ['app_id', 'app_secret'];
+        $keys = ['app_id', 'app_secret', 'default_graph_version'];
 
         foreach ($keys as $key) {
             if (!array_key_exists($key, $config)) {
