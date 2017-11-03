@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "php": "^7.0",
+        "php": "^7.1",
         "illuminate/contracts": "5.5.*",
         "illuminate/support": "5.5.*",
         "graham-campbell/manager": "^3.0",
