@@ -5,6 +5,7 @@
 - Added httplug support
 - Update facebook graph sdk
 - Made `default_graph_version` config required 
+- Drop php 7.0 support
 
 ## 2.10.0 (released 2017-09-02)
 
