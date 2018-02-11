@@ -5,10 +5,10 @@
 - Added HTTPlug support
 - Added Laravel 5.6 support
 - Added void return types
-- Updated Facebook SDK
 - Updated `default_graph_version` config required 
-- Removed PHP 7.0 support
+- Updated Facebook SDK
 - Removed Laravel 5.5 support
+- Removed PHP 7.0 support
 
 ## 2.10.0 (released 2017-09-02)
 
