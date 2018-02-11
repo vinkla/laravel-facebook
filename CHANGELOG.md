@@ -7,7 +7,6 @@
 - Added void return types
 - Updated Facebook SDK
 - Updated `default_graph_version` config required 
-- Added PHP 7.0 support
 - Removed PHP 7.0 support
 - Removed Laravel 5.5 support
 
