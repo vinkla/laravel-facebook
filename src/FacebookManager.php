@@ -29,7 +29,7 @@ class FacebookManager extends AbstractManager
      *
      * @var \Vinkla\Facebook\FacebookFactory
      */
-    private $factory;
+    protected $factory;
 
     /**
      * Create a new facebook manager instance.
