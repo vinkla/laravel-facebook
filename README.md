@@ -15,6 +15,7 @@ Facebook::getRedirectLoginHelper();
 [![Build Status](https://img.shields.io/travis/vinkla/laravel-facebook/master.svg?style=flat)](https://travis-ci.org/vinkla/laravel-facebook)
 [![StyleCI](https://styleci.io/repos/35561124/shield?style=flat)](https://styleci.io/repos/35561124)
 [![Coverage Status](https://img.shields.io/codecov/c/github/vinkla/laravel-facebook.svg?style=flat)](https://codecov.io/github/vinkla/laravel-facebook)
+[![Total Downloads](https://img.shields.io/packagist/dt/vinkla/facebook.svg?style=flat)](https://packagist.org/packages/vinkla/facebook)
 [![Latest Version](https://img.shields.io/github/release/vinkla/facebook.svg?style=flat)](https://github.com/vinkla/facebook/releases)
 [![License](https://img.shields.io/packagist/l/vinkla/facebook.svg?style=flat)](https://packagist.org/packages/vinkla/facebook)
 
