@@ -61,7 +61,7 @@ This option `connections` is where each of the connections are setup for your ap
 
 #### FacebookManager
 
-This is the class of most interest. It is bound to the ioc container as `facebook` and can be accessed using the `Facades\Facebook` facade. This class implements the ManagerInterface by extending AbstractManager. The interface and abstract class are both part of [Graham Campbell's](https://github.com/GrahamCampbell) [Laravel Manager](https://github.com/GrahamCampbell/Laravel-Manager) package, so you may want to go and checkout the docs for how to use the manager class over at that repository. Note that the connection class returned will always be an instance of `Facebook\Facebook`.
+This is the class of most interest. It is bound to the ioc container as `facebook` and can be accessed using the `Facades\Facebook` facade. This class implements the ManagerInterface by extending AbstractManager. The interface and abstract class are both part of the [Laravel Manager](https://github.com/GrahamCampbell/Laravel-Manager) package, so you may want to go and checkout the docs for how to use the manager class over at that repository. Note that the connection class returned will always be an instance of `Facebook\Facebook`.
 
 #### Facades\Facebook
 
