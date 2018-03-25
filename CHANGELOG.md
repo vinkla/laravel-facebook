@@ -7,6 +7,14 @@
 - Updated `default_graph_version` config required 
 - Updated Facebook SDK
 
+## 3.0.0 (released 2018-03-25)
+
+- Added Laravel 5.6 support
+- Added void return types
+- Fixed config when inside phar
+- Removed Laravel 5.5 support
+- Removed PHP 7.0 support
+
 ## 2.10.0 (released 2017-09-02)
 
 - Removed Laravel 5.3 and 5.4 support
@@ -27,7 +35,11 @@
 ## 2.6.0 (released 2017-01-01)
 
 - Added Laravel 5.4 support
+<<<<<<< HEAD
 - Dropped PHP 5.6 support
+=======
+- Dropped php 5.6 support
+>>>>>>> master
 
 ## 2.5.0 (released 2016-11-04)
 

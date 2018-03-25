@@ -131,7 +131,7 @@ App::make('Foo')->bar();
 ```
 
 ## Documentation
-There are other classes in this package that are not documented here. This is because the package is a Laravel wrapper of [official Facebook package](https://github.com/facebook/facebook-php-sdk-v4).
+There are other classes in this package that are not documented here. This is because the package is a Laravel wrapper of [official Facebook package](https://github.com/facebook/php-graph-sdk#readme).
 
 ## License
 
