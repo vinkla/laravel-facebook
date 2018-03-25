@@ -1,12 +1,20 @@
 # CHANGELOG
 
+## 3.0.0 (released 2018-03-25)
+
+- Added Laravel 5.6 support
+- Added void return types
+- Fixed config when inside phar
+- Removed Laravel 5.5 support
+- Removed PHP 7.0 support
+
 ## 2.10.0 (released 2017-09-02)
 
-- Removed laravel 5.3 and 5.4 support
+- Removed Laravel 5.3 and 5.4 support
 
 ## 2.9.0 (released 2017-08-07)
 
-- Added laravel 5.5 support
+- Added Laravel 5.5 support
 - Update facebook graph sdk
 
 ## 2.8.0 (released 2017-04-28)
@@ -19,7 +27,7 @@
 
 ## 2.6.0 (released 2017-01-01)
 
-- Added laravel 5.4 support
+- Added Laravel 5.4 support
 - Dropped php 5.6 support
 
 ## 2.5.0 (released 2016-11-04)
@@ -40,7 +48,7 @@
 
 ## 2.1.0 (released 2016-05-05)
 
-- Added laravel 5.3 support
+- Added Laravel 5.3 support
 
 ## 2.0.3 (released 2016-04-25)
 
