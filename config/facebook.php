@@ -42,14 +42,14 @@ return [
         'main' => [
             'app_id' => 'your-app-id',
             'app_secret' => 'your-app-secret',
-            'default_graph_version' => 'v2.10',
+            'default_graph_version' => 'v2.2',
             //'default_access_token' => null,
         ],
 
         'alternative' => [
             'app_id' => 'your-app-id',
             'app_secret' => 'your-app-secret',
-            'default_graph_version' => 'v2.10',
+            'default_graph_version' => 'v2.2',
             //'default_access_token' => null,
         ],
 
