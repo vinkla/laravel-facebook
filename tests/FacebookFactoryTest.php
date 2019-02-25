@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Vinkla\Tests\Facebook;
 
 use Facebook\Facebook;
+use InvalidArgumentException;
 use Vinkla\Facebook\FacebookFactory;
 
 /**
@@ -36,21 +37,19 @@ class FacebookFactoryTest extends AbstractTestCase
         $this->assertInstanceOf(Facebook::class, $return);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
     public function testMakeWithoutAppSecret()
     {
+        $this->expectException(InvalidArgumentException::class);
+
         $factory = $this->getFacebookFactory();
 
         $factory->make(['app_id' => 'your-app-id']);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
     public function testMakeWithoutAppId()
     {
+        $this->expectException(InvalidArgumentException::class);
+
         $factory = $this->getFacebookFactory();
 
         $factory->make(['app_secret' => 'your-app-secret']);
