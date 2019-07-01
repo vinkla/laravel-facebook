@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace Vinkla\Facebook;
 
 use Facebook\Facebook;
+use Illuminate\Support\Arr;
 use InvalidArgumentException;
 
 /**
@@ -56,7 +57,7 @@ class FacebookFactory
             }
         }
 
-        return array_only($config, [
+        return Arr::only($config, [
             'app_id',
             'app_secret',
             'default_access_token',
