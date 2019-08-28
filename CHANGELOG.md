@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 4.0.0 (released 2019-08-28)
+
+- Added Laravel 6.0 support
+- Dropped Laravel 5.8 support
+
 ## 3.2.0 (released 2019-02-27)
 
 - Added laravel 5.8 support
