@@ -26,12 +26,6 @@ Require this package, with [Composer](https://getcomposer.org/), in the root dir
 $ composer require vinkla/facebook
 ```
 
-If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in `config/app.php` to your aliases array.
-
-```php
-'Facebook' => Vinkla\Facebook\Facades\Facebook::class
-```
-
 ## Configuration
 
 Laravel Facebook requires connection configuration. To get started, you'll need to publish all vendor assets:
@@ -52,42 +46,28 @@ This option `connections` is where each of the connections are setup for your ap
 
 ## Usage
 
-#### FacebookManager
-
-This is the class of most interest. It is bound to the ioc container as `facebook` and can be accessed using the `Facades\Facebook` facade. This class implements the ManagerInterface by extending AbstractManager. The interface and abstract class are both part of the [Laravel Manager](https://github.com/GrahamCampbell/Laravel-Manager) package, so you may want to go and checkout the docs for how to use the manager class over at that repository. Note that the connection class returned will always be an instance of `Facebook\Facebook`.
-
-#### Facades\Facebook
-
-This facade will dynamically pass static method calls to the `facebook` object in the ioc container which by default is the `FacebookManager` class.
-
-#### FacebookServiceProvider
-
-This class contains no public methods of interest. This class should be added to the providers array in `config/app.php`. This class will setup ioc bindings.
-
-### Examples
-
-Here you can see an example of just how simple this package is to use. Out of the box, the default adapter is `main`. After you enter your authentication details in the config file, it will just work:
+Here you can see an example of you may use this package. Out of the box, the default adapter is `main`. After you enter your authentication details in the config file, it will just work:
 
 ```php
 // You can alias this in config/app.php.
 use Vinkla\Facebook\Facades\Facebook;
 
-Facebook::get('/me', '{access-token}');
 // We're done here - how easy was that, it just works!
+Facebook::get('/me', '{access-token}');
 
-Facebook::getRedirectLoginHelper();
 // This example is simple and there are far more methods available.
+Facebook::getRedirectLoginHelper();
 ```
 
-The Facebook manager will behave like it is a `Facebook\Facebook`. If you want to call specific connections, you can do that with the connection method:
+The manager will behave like it is a `Facebook\Facebook` class. If you want to call specific connections, you can do that with the connection method:
 
 ```php
 use Vinkla\Facebook\Facades\Facebook;
 
-// Writing this…
+// Writing this...
 Facebook::connection('main')->get('/me', '{access-token}');
 
-// …is identical to writing this
+// ...is identical to writing this
 Facebook::get('/me', '{access-token}');
 
 // and is also identical to writing this.
@@ -123,8 +103,7 @@ class Foo
 App::make('Foo')->bar();
 ```
 
-## Documentation
-There are other classes in this package that are not documented here. This is because the package is a Laravel wrapper of [official Facebook package](https://github.com/facebook/php-graph-sdk#readme).
+For more information on how to use the `Facebook\Facebook` class, check out the docs at [`facebook/graph-sdk`](https://github.com/facebook/php-graph-sdk).
 
 ## License
 

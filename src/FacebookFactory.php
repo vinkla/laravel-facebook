@@ -1,12 +1,12 @@
 <?php
 
-/*
- * This file is part of Laravel Facebook.
- *
-  * (c) Vincent Klaiber <hello@doubledip.se>
+/**
+ * Copyright (c) Vincent Klaiber.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
+ *
+ * @see https://github.com/vinkla/laravel-facebook
  */
 
 declare(strict_types=1);
@@ -17,20 +17,8 @@ use Facebook\Facebook;
 use Illuminate\Support\Arr;
 use InvalidArgumentException;
 
-/**
- * This is the facebook facade class.
- *
- * @author Vincent Klaiber <hello@doubledip.se>
- */
 class FacebookFactory
 {
-    /**
-     * Make a new facebook client.
-     *
-     * @param array $config
-     *
-     * @return \Facebook\Facebook
-     */
     public function make(array $config): Facebook
     {
         $config = $this->getConfig($config);
@@ -39,13 +27,7 @@ class FacebookFactory
     }
 
     /**
-     * Get the configuration data.
-     *
-     * @param string[] $config
-     *
      * @throws \InvalidArgumentException
-     *
-     * @return array
      */
     protected function getConfig(array $config): array
     {
@@ -69,13 +51,6 @@ class FacebookFactory
         ]);
     }
 
-    /**
-     * Get the facebook client.
-     *
-     * @param string[] $config
-     *
-     * @return \Facebook\Facebook
-     */
     protected function getClient(array $config): Facebook
     {
         return new Facebook($config);

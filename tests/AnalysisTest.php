@@ -17,20 +17,10 @@ use GrahamCampbell\Analyzer\AnalysisTrait;
 use Laravel\Lumen\Application;
 use PHPUnit\Framework\TestCase;
 
-/**
- * This is the analysis test class.
- *
- * @author Vincent Klaiber <hello@doubledip.se>
- */
 class AnalysisTest extends TestCase
 {
     use AnalysisTrait;
 
-    /**
-     * Get the code paths to analyze.
-     *
-     * @return string[]
-     */
     protected function getPaths()
     {
         return [
@@ -40,11 +30,6 @@ class AnalysisTest extends TestCase
         ];
     }
 
-    /**
-     * Get the classes to ignore not existing.
-     *
-     * @return string[]
-     */
     protected function getIgnored()
     {
         return [Application::class];

@@ -1,12 +1,12 @@
 <?php
 
-/*
- * This file is part of Laravel Facebook.
- *
-  * (c) Vincent Klaiber <hello@doubledip.se>
+/**
+ * Copyright (c) Vincent Klaiber.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
+ *
+ * @see https://github.com/vinkla/laravel-facebook
  */
 
 declare(strict_types=1);
@@ -17,11 +17,6 @@ use Facebook\Facebook;
 use InvalidArgumentException;
 use Vinkla\Facebook\FacebookFactory;
 
-/**
- * This is the Facebook factory test class.
- *
- * @author Vincent Klaiber <hello@doubledip.se>
- */
 class FacebookFactoryTest extends AbstractTestCase
 {
     public function testMakeStandard()

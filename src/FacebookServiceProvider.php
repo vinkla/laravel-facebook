@@ -1,12 +1,12 @@
 <?php
 
-/*
- * This file is part of Laravel Facebook.
- *
-  * (c) Vincent Klaiber <hello@doubledip.se>
+/**
+ * Copyright (c) Vincent Klaiber.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
+ *
+ * @see https://github.com/vinkla/laravel-facebook
  */
 
 declare(strict_types=1);
@@ -19,28 +19,13 @@ use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Lumen\Application as LumenApplication;
 
-/**
- * This is the Facebook service provider class.
- *
- * @author Vincent Klaiber <hello@doubledip.se>
- */
 class FacebookServiceProvider extends ServiceProvider
 {
-    /**
-     * Boot the service provider.
-     *
-     * @return void
-     */
     public function boot(): void
     {
         $this->setupConfig();
     }
 
-    /**
-     * Setup the config.
-     *
-     * @return void
-     */
     protected function setupConfig(): void
     {
         $source = realpath($raw = __DIR__ . '/../config/facebook.php') ?: $raw;
@@ -54,11 +39,6 @@ class FacebookServiceProvider extends ServiceProvider
         $this->mergeConfigFrom($source, 'facebook');
     }
 
-    /**
-     * Register the service provider.
-     *
-     * @return void
-     */
     public function register(): void
     {
         $this->registerFactory();
@@ -66,11 +46,6 @@ class FacebookServiceProvider extends ServiceProvider
         $this->registerBindings();
     }
 
-    /**
-     * Register the factory class.
-     *
-     * @return void
-     */
     protected function registerFactory(): void
     {
         $this->app->singleton('facebook.factory', function () {
@@ -80,11 +55,6 @@ class FacebookServiceProvider extends ServiceProvider
         $this->app->alias('facebook.factory', FacebookFactory::class);
     }
 
-    /**
-     * Register the manager class.
-     *
-     * @return void
-     */
     protected function registerManager(): void
     {
         $this->app->singleton('facebook', function (Container $app) {
@@ -97,11 +67,6 @@ class FacebookServiceProvider extends ServiceProvider
         $this->app->alias('facebook', FacebookManager::class);
     }
 
-    /**
-     * Register the bindings.
-     *
-     * @return void
-     */
     protected function registerBindings(): void
     {
         $this->app->bind('facebook.connection', function (Container $app) {
@@ -114,8 +79,6 @@ class FacebookServiceProvider extends ServiceProvider
     }
 
     /**
-     * Get the services provided by the provider.
-     *
      * @return string[]
      */
     public function provides(): array

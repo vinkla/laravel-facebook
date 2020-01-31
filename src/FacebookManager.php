@@ -1,12 +1,12 @@
 <?php
 
-/*
- * This file is part of Laravel Facebook.
- *
-  * (c) Vincent Klaiber <hello@doubledip.se>
+/**
+ * Copyright (c) Vincent Klaiber.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
+ *
+ * @see https://github.com/vinkla/laravel-facebook
  */
 
 declare(strict_types=1);
@@ -17,28 +17,10 @@ use Facebook\Facebook;
 use GrahamCampbell\Manager\AbstractManager;
 use Illuminate\Contracts\Config\Repository;
 
-/**
- * This is the facebook manager class.
- *
- * @author Vincent Klaiber <hello@doubledip.se>
- */
 class FacebookManager extends AbstractManager
 {
-    /**
-     * The factory instance.
-     *
-     * @var \Vinkla\Facebook\FacebookFactory
-     */
-    protected $factory;
+    protected FacebookFactory $factory;
 
-    /**
-     * Create a new facebook manager instance.
-     *
-     * @param \Illuminate\Contracts\Config\Repository $config
-     * @param \Vinkla\Facebook\FacebookFactory $factory
-     *
-     * @return void
-     */
     public function __construct(Repository $config, FacebookFactory $factory)
     {
         parent::__construct($config);
@@ -46,33 +28,16 @@ class FacebookManager extends AbstractManager
         $this->factory = $factory;
     }
 
-    /**
-     * Create the connection instance.
-     *
-     * @param array $config
-     *
-     * @return \Facebook\Facebook
-     */
     protected function createConnection(array $config): Facebook
     {
         return $this->factory->make($config);
     }
 
-    /**
-     * Get the configuration name.
-     *
-     * @return string
-     */
     protected function getConfigName(): string
     {
         return 'facebook';
     }
 
-    /**
-     * Get the factory instance.
-     *
-     * @return \Vinkla\Facebook\FacebookFactory
-     */
     public function getFactory(): FacebookFactory
     {
         return $this->factory;
