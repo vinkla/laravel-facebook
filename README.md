@@ -14,7 +14,7 @@ Facebook::getRedirectLoginHelper();
 
 [![Build Status](https://badgen.net/travis/vinkla/laravel-facebook/master)](https://travis-ci.org/vinkla/laravel-facebook)
 [![Coverage Status](https://badgen.net/codecov/c/github/vinkla/laravel-facebook)](https://codecov.io/github/vinkla/laravel-facebook)
-[![Total Downloads](https://badgen.net/packagist/dt/vinkla/facebook)](https://packagist.org/packages/vinkla/facebook)
+[![Monthly Downloads](https://badgen.net/packagist/dm/vinkla/facebook)](https://packagist.org/packages/vinkla/facebook)
 [![Latest Version](https://badgen.net/github/release/vinkla/facebook)](https://github.com/vinkla/facebook/releases)
 [![License](https://badgen.net/packagist/license/vinkla/facebook)](https://packagist.org/packages/vinkla/facebook)
 
