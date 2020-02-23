@@ -12,11 +12,9 @@ $facebook->get('/me', '{access-token}');
 Facebook::getRedirectLoginHelper();
 ```
 
-[![Build Status](https://badgen.net/travis/vinkla/laravel-facebook/master)](https://travis-ci.org/vinkla/laravel-facebook)
-[![Coverage Status](https://badgen.net/codecov/c/github/vinkla/laravel-facebook)](https://codecov.io/github/vinkla/laravel-facebook)
-[![Monthly Downloads](https://badgen.net/packagist/dm/vinkla/facebook)](https://packagist.org/packages/vinkla/facebook)
-[![Latest Version](https://badgen.net/github/release/vinkla/facebook)](https://github.com/vinkla/facebook/releases)
-[![License](https://badgen.net/packagist/license/vinkla/facebook)](https://packagist.org/packages/vinkla/facebook)
+[![Build Status](https://badgen.net/github/status/vinkla/laravel-facebook/master)](https://github.com/vinkla/laravel-facebook/actions)
+[![Monthly Downloads](https://badgen.net/packagist/dm/vinkla/facebook)](https://packagist.org/packages/vinkla/laravel-facebook/stats)
+[![Latest Version](https://badgen.net/github/release/vinkla/laravel-facebook)](https://github.com/vinkla/laravel-facebook/releases)
 
 ## Installation
 
