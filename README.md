@@ -12,7 +12,7 @@ $facebook->get('/me', '{access-token}');
 Facebook::getRedirectLoginHelper();
 ```
 
-[![Build Status](https://badgen.net/github/status/vinkla/laravel-facebook/master)](https://github.com/vinkla/laravel-facebook/actions)
+[![Build Status](https://badgen.net/github/checks/vinkla/laravel-facebook?label=build&icon=github)](https://github.com/vinkla/laravel-facebook/actions)
 [![Monthly Downloads](https://badgen.net/packagist/dm/vinkla/facebook)](https://packagist.org/packages/vinkla/laravel-facebook/stats)
 [![Latest Version](https://badgen.net/github/release/vinkla/laravel-facebook)](https://github.com/vinkla/laravel-facebook/releases)
 
